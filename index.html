@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var A = parseInt(prompt("How many Students you want to add?"));
+var B = "<table border = '2'><tr><th>RollNO</th><th>Name</th><th>ReMarks</th></tr>";
+for (var i = 0; i < A; i++) {
+  var RollNo = parseInt(prompt("Enter the RollNo of Student " + (i + 1) + ":"));
+  var Name = prompt("Enter the Name of User " + (i + 1) + ":");
+  var ReMarks =parseInt(prompt("Enter the ReMarks of Student " + (i + 1) + ":"));
+  B += "<tr><td>" + RollNo + "</td><td>" + Name + "</td><td>" + ReMarks + "</td></tr>";
+}
+B += "</table>";
+document.write(B);
+    </script>
+</body>
+</html>
